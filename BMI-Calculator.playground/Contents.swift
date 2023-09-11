@@ -8,7 +8,7 @@ let weight: [Double] = [82.5, 78.2, 120.0, 71.2, 92.9]  // in kg
 for i in 0..<firstName.count {
   let heightInM = Double(height[i]) / 100
   let bmi = weight[i] / (heightInM * heightInM)
-  let roundBmi = Double(Int(bmi * 10)) / 10
+  let roundBmi = round(bmi * 10) / 10
   var classification = ""
   if roundBmi < 18.5 {
     classification = "Underweight"
