@@ -22,9 +22,9 @@ for i in 0..<firstName.count {
   var classification = ""
     
     switch roundBmi {
-    case 0...18.5:
+    case 0...18.4:
         classification = "Underweight"
-    case 18.6...24.9:
+    case 18.5...24.9:
         classification = "Normal Weight"
     case 25...29.9:
         classification = "Overweight"
